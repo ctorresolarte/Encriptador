@@ -25,26 +25,29 @@
     </header>
 
     <main>
-
+        <h1 class="titulo">Encriptador</h1>
         <section>
-            <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
-            <div class="advertencia">
-                <h6>Solo letras minúsculas y sin acentos</h6>
+            <div class="container-entradaTexto">
+                <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                <h5>Solo letras minúsculas y sin acentos</h5>
+                <div class="container-buttons">
+                    <button class="botones btn-desencriptar" onclick="btnDesencriptar2()">Desencriptar</button>
+                    <button class="botones btn-encriptar" onclick=" btnEncriptar()">Encriptar</button>
+                    <button class="botones btn-pegar" id="pegar">Pegar</button>
+                </div>
             </div>
+            <!-- </section> -->
 
-            <div class="botones">
-                <button class="btn-encriptar" onclick=" btnEncriptar()">Encriptar</button>
-                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            <!-- <section class="section-2"> -->
+            <div class="container-textoEncriptado">
+                <textarea id="mensaje"class="mensaje" cols="30" rows="10">-</textarea>
+                <div class="container-buttons">
+                    <button class="botones btn-copiar" id="copiar">Copiar</button>
+                    <button class="botones btn-limpiar" onclick="btnLimpiar()">Limpiar</button>
+                    <button class="botones btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                </div>
             </div>
         </section>
-
-        <section class="dos">
-            <textarea class="mensaje" cols="20" rows="10"></textarea>
-            <div>
-                <button class="copiar">Copiar</button>
-            </div>
-        </section>
-
     </main>
 
     <script src="script.js"></script>
