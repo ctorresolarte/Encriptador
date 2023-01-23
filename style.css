@@ -74,10 +74,11 @@
      border-left: none;
      background: #a0a0a0;
     }
-    
+    .botones{
+        background: transparent;
+    }
     .btn-encriptar,
-    .btn-desencriptar,
-    .btn-pegar {
+    .btn-desencriptar{
         font-family: monospace;
         font-size: 18px;
         color: #FAFAFA;
@@ -88,13 +89,14 @@
         background: #252525;
         box-shadow: 3px 3px #fafafa;
         cursor: pointer;
-        margin: 3% 10% 0 10%;
+        margin: 8% 10% 0 10%;
         /* transform: rotateZ(-0.05turn); */
     }
     .botones:active {
         box-shadow: none;
         transform: translate(3px, 3px);
     }
+
 
 
     .container-textoEncriptado {
