@@ -15,7 +15,8 @@ const mensaje = document.querySelector(".mensaje");
 function btnLimpiar() {
     const textoEncriptado = encriptar(textArea.value)
     mensaje.value = textoEncriptado
-    textArea.value = "";
+    // textArea.value = "";
+    mensaje.value = "";
     mensaje.style.backgroundImage = "";
 }
 
@@ -70,6 +71,7 @@ window.onload = function () {
 function btnCopiar() {
     document.getElementsByClassName("copiar").addEventListener('click', () => {
         let contenido = document.getElementsByClassName('copiar').value;
+        mensaje.value = "";
     })
 }
 
